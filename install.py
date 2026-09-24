@@ -8,7 +8,7 @@ AUTHOR = "Dhruv Meghwal"
 AUTHOR_EMAIL = "dhruvmeghwal252009@gmail.com"
 
 GITHUB_USER = "Anonymous-25"
-REPOSITORY = "dracula-wireshark-all-rounder"
+REPOSITORY = "dracula-wireshark"
 
 LICENSE = "MIT"
 from pathlib import Path
