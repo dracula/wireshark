@@ -1,62 +1,51 @@
-# Install
+### [Wireshark](https://www.wireshark.org)
 
-## Requirements
+#### Requirements
 
-* Wireshark 4.x
-* Python 3.10+
+- Wireshark 4.x
+- Python 3.10 or newer
 
-## Installation
+#### Install using Git
 
-Clone the repository:
+If you are a Git user, you can install the theme and keep it up to date by cloning the repository:
 
 ```bash
-git clone https://github.com/Anonymous-25/dracula-wireshark.git
-
-cd dracula-wireshark
+git clone https://github.com/dracula/wireshark.git
+cd wireshark
+python3 install.py
 ```
 
-Run the installer:
+The installer creates the Dracula profile, installs its coloring rules, generates profile metadata, and creates backups when needed.
+
+#### Install manually
+
+Download the [GitHub `.zip` archive](https://github.com/dracula/wireshark/archive/main.zip), unzip it, and open the extracted directory in a terminal.
 
 ```bash
 python3 install.py
 ```
 
-The installer will:
+#### Activating theme
 
-* Create the Dracula profile
-* Install coloring rules
-* Generate profile metadata
-* Create backups when needed
+1. Start or restart Wireshark;
+2. Open **Edit → Configuration Profiles**;
+3. Select the **Dracula** profile and confirm the change;
+4. Open a capture file and enjoy the theme ✨
 
-## Verify Installation
+#### Updating
 
-1. Start Wireshark
-2. Open:
-
-```text
-View → Coloring Rules
-```
-
-3. Select the Dracula profile
-4. Open a capture file and verify protocol coloring
-
-## Updating
-
-Pull the latest changes:
+If you installed the theme using Git, pull the latest changes from the cloned directory:
 
 ```bash
 git pull
-```
-
-Then rerun:
-
-```bash
 python3 install.py
 ```
 
-## Troubleshooting
+Then restart Wireshark.
 
-### Invalid Protocol Errors
+#### Troubleshooting
+
+##### Invalid protocol errors
 
 Check whether the protocol exists in your Wireshark build:
 
@@ -70,7 +59,7 @@ Check available fields:
 tshark -G fields
 ```
 
-### Reset Profile
+##### Reset profile
 
 Remove the generated profile and reinstall:
 
