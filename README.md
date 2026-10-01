@@ -6,7 +6,7 @@
 
 ## Install
 
-All instructions can be found in [INSTALL.md](./INSTALL.md).
+All instructions can be found at [draculatheme.com/wireshark](https://draculatheme.com/wireshark).
 
 ## Features
 
